@@ -39,23 +39,26 @@ build/
 .DS_Store
 Thumbs.db
 
-# Java
+### Java ###
 *.class
 *.war
 *.jar
 !.mvn/wrapper/maven-wrapper.jar
 
-# Node.js
+### Node.js
 node_modules/
 dist/
 .env.local
 
-# Логи
+### Логи ###
 *.log
 logs/
 
-# Конфиденциальные данные
+### Конфиденциальные данные ###
 *.properties
 !*.properties.example
 .env
 !*.env.example
+
+### Docker ###
+docker-compose.override.yml
