@@ -1,0 +1,6 @@
+# Database Configuration
+db.url=jdbc:postgresql://localhost:5432/librarymanagement
+db.username=your_username_here
+db.password=your_password_here
+db.driver=org.postgresql.Driver
+db.pool.size=10
