@@ -1,15 +1,15 @@
 <script>
-    // Здесь будет код (наверное)
+    import { Router, Route } from 'svelte-routing';
+    import Navbar from './lib/components/Navbar.svelte';
+    import BookList from './lib/components/BookList.svelte';
+    import Login from './lib/components/Login.svelte';
+    import Register from './lib/components/Register.svelte';
 </script>
 
-<main>
-    <h1>LibraryManagement</h1>
-    <p>Frontend is ready!</p>
-</main>
+<Navbar />
 
-<style>
-    main {
-        text-align: center;
-        padding: 2rem;
-    }
-</style>
+<Router>
+    <Route path="/" component={BookList} />
+    <Route path="/login" component={Login} />
+    <Route path="/register" component={Register} />
+</Router>
